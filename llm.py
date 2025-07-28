@@ -8,16 +8,21 @@ import ast
 from tqdm import tqdm
 from pathlib import Path
 
-mps = torch.device("mps") if torch.backends.mps.is_available() else None
+if torch.cuda.is_available():
+    device = torch.device("cuda")
+elif torch.backends.mps.is_available():
+    device = torch.device("mps")
+else:
+    device = torch.device("cpu")
 
 print("Loading model...")
 # Load the tokenizer and model from the merged checkpoint
-tokenizer = AutoTokenizer.from_pretrained("namespace-Pt/Llama-3-8B-Instruct-80K-QLoRA-Merged")
-model = AutoModelForCausalLM.from_pretrained("namespace-Pt/Llama-3-8B-Instruct-80K-QLoRA-Merged",
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B-Chat")
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B-Chat",
     # attn_implementation='flash_attention_2',
     torch_dtype=torch.bfloat16,
     # device map to mps of mac
-    device_map={"": mps} if mps else None,
+    device_map={"": device} if device else None,
     low_cpu_mem_usage=True,
     trust_remote_code=True,    
 )
@@ -66,7 +71,7 @@ def inference(mna_name, args, sentence):
     """
 
     messages = [{"role": "user", "content": phase1_prompt}]
-    inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt", return_dict=True).to(mps)
+    inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt", return_dict=True).to(device)
 
     with torch.no_grad():
         outputs = model.generate(**inputs, do_sample=True, top_p=1, temperature=0.5, max_new_tokens=512)[:, inputs["input_ids"].shape[1]:]
@@ -163,7 +168,7 @@ def apply_inference_to_df(df):
         """
 
         messages = [{"role": "user", "content": refinement_prompt}]
-        inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt", return_dict=True).to(mps)
+        inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt", return_dict=True).to(device)
     
         with torch.no_grad():
             outputs = model.generate(**inputs, do_sample=True, top_p=1, temperature=0.8, max_new_tokens=2048)[:, inputs["input_ids"].shape[1]:]
@@ -191,4 +196,4 @@ def apply_inference_to_df(df):
 df = apply_inference_to_df(df)
 
 # auto free mps
-torch.mps.empty_cache()
+torch.device.empty_cache()
