@@ -1,0 +1,130 @@
+{
+  "definitions": [
+    {
+      "name": "M&A",
+      "definition": "Viết tắt của Mergers and Acquisitions, nghĩa là Sáp nhập và Mua lại – một hoạt động trong tài chính doanh nghiệp, nơi các công ty hợp nhất hoặc mua lại lẫn nhau để mở rộng quy mô, thị phần hoặc năng lực cạnh tranh."
+    },
+    {
+      "name": "Merger (Sáp nhập)",
+      "definition": "Là quá trình hai công ty hợp nhất lại với nhau để trở thành một công ty duy nhất, thông thường có sự đồng thuận của cả hai bên."
+    },
+    {
+      "name": "Acquisition (Mua lại)",
+      "definition": "Là việc một công ty mua lại phần lớn hoặc toàn bộ cổ phần của công ty khác để kiểm soát hoạt động của công ty đó."
+    },
+    {
+      "name": "Due Diligence",
+      "definition": "Quá trình kiểm tra, thẩm định thông tin tài chính, pháp lý và hoạt động của doanh nghiệp mục tiêu trước khi tiến hành M&A."
+    },
+    {
+      "name": "Synergy",
+      "definition": "Lợi ích gia tăng mà các công ty có thể đạt được khi hợp nhất với nhau so với hoạt động độc lập từng bên.",
+      "example": "Cắt giảm chi phí, tăng doanh thu hoặc chia sẻ công nghệ sau khi sáp nhập."
+    },
+    {
+      "name": "Hostile Takeover",
+      "definition": "Một thương vụ mua lại mà không có sự đồng thuận của ban lãnh đạo công ty mục tiêu.",
+      "example": "Dùng cổ đông hoặc chào mua công khai để giành quyền kiểm soát công ty."
+    },
+    {
+      "name": "Friendly Takeover",
+      "definition": "Mua lại doanh nghiệp với sự chấp thuận và hợp tác từ ban lãnh đạo công ty mục tiêu."
+    },
+    {
+      "name": "Valuation",
+      "definition": "Quy trình xác định giá trị của một doanh nghiệp, thường sử dụng các phương pháp như chiết khấu dòng tiền (DCF), so sánh thị trường, tài sản ròng."
+    },
+    {
+      "name": "Share Swap",
+      "definition": "Hình thức thanh toán trong thương vụ M&A, nơi cổ đông công ty mục tiêu được đổi cổ phần của họ lấy cổ phần của công ty mua lại."
+    },
+    {
+      "name": "Letter of Intent (LOI)",
+      "definition": "Văn bản thể hiện ý định nghiêm túc trong việc tiến hành M&A giữa hai bên, thường có các điều khoản sơ bộ trước hợp đồng chính thức."
+    },
+    {
+      "name": "EBITDA",
+      "definition": "Lợi nhuận trước lãi vay, thuế, khấu hao và khấu trừ tài sản – chỉ số phổ biến dùng để đánh giá hiệu suất hoạt động của doanh nghiệp."
+    },
+    {
+      "name": "DCF (Discounted Cash Flow)",
+      "definition": "Phương pháp định giá dựa trên dòng tiền tương lai chiết khấu về hiện tại để xác định giá trị hiện tại của doanh nghiệp."
+    },
+    {
+      "name": "Comparable Company Analysis (Comps)",
+      "definition": "Phân tích các công ty tương đương trên thị trường để so sánh và định giá công ty mục tiêu."
+    },
+    {
+      "name": "Pre-Money / Post-Money Valuation",
+      "definition": "Giá trị doanh nghiệp trước/sau khi nhận vốn đầu tư hoặc hoàn tất giao dịch M&A."
+    },
+    {
+      "name": "Term Sheet",
+      "definition": "Tài liệu sơ bộ tóm tắt các điều khoản chính của một giao dịch M&A hoặc đầu tư."
+    },
+    {
+      "name": "Non-Disclosure Agreement (NDA)",
+      "definition": "Thỏa thuận giữ bí mật thông tin giữa các bên tham gia trong quá trình thương lượng M&A."
+    },
+    {
+      "name": "Share Purchase Agreement (SPA)",
+      "definition": "Hợp đồng quy định điều khoản mua bán cổ phần giữa các bên."
+    },
+    {
+      "name": "Asset Purchase Agreement (APA)",
+      "definition": "Hợp đồng liên quan đến việc mua bán tài sản thay vì cổ phần của doanh nghiệp."
+    },
+    {
+      "name": "Covenants",
+      "definition": "Các điều khoản ràng buộc được đưa vào hợp đồng như không cạnh tranh, giữ bí mật, duy trì nhân sự chủ chốt, v.v."
+    },
+    {
+      "name": "Vertical Merger",
+      "definition": "Sáp nhập giữa các công ty trong cùng chuỗi cung ứng (ví dụ nhà sản xuất và nhà phân phối)."
+    },
+    {
+      "name": "Horizontal Merger",
+      "definition": "Sáp nhập giữa các công ty cùng ngành và thường là đối thủ cạnh tranh trực tiếp."
+    },
+    {
+      "name": "Conglomerate Merger",
+      "definition": "Sáp nhập giữa hai công ty không liên quan đến nhau về lĩnh vực hoạt động."
+    },
+    {
+      "name": "Spin-off",
+      "definition": "Việc tách một phần công ty thành một thực thể độc lập."
+    },
+    {
+      "name": "Divestiture",
+      "definition": "Việc doanh nghiệp bán hoặc thoái vốn khỏi một phần hoạt động hoặc tài sản."
+    },
+    {
+      "name": "Earn-Out",
+      "definition": "Cơ chế thanh toán một phần giá trị mua lại dựa trên hiệu quả kinh doanh sau giao dịch."
+    },
+    {
+      "name": "Leverage Buyout (LBO)",
+      "definition": "Mua lại công ty bằng cách sử dụng phần lớn vốn vay, thường được thế chấp bằng chính tài sản của công ty mục tiêu."
+    },
+    {
+      "name": "Management Buyout (MBO)",
+      "definition": "Việc ban điều hành hiện tại của công ty đứng ra mua lại toàn bộ hoặc phần lớn công ty đó."
+    },
+    {
+      "name": "Tender Offer",
+      "definition": "Lời đề nghị công khai từ một công ty nhằm mua cổ phần từ cổ đông của công ty mục tiêu với mức giá hấp dẫn."
+    },
+    {
+      "name": "Golden Parachute",
+      "definition": "Gói bồi thường tài chính lớn cho lãnh đạo cấp cao nếu họ bị sa thải sau M&A."
+    },
+    {
+      "name": "Poison Pill",
+      "definition": "Chiến lược được công ty mục tiêu sử dụng để làm cho công ty trở nên kém hấp dẫn đối với bên thâu tóm."
+    },
+    {
+      "name": "White Knight",
+      "definition": "Một công ty hoặc nhà đầu tư được mời đến mua lại công ty nhằm tránh sự kiểm soát từ bên thâu tóm thù địch."
+    }
+  ]
+}
