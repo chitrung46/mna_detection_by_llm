@@ -22,7 +22,7 @@ model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B-Chat",
     # attn_implementation='flash_attention_2',
     torch_dtype=torch.bfloat16,
     # device map to mps of mac
-    device_map={"": device} if device else None,
+    device_map={"": device} if device.type != "cpu" else None,
     low_cpu_mem_usage=True,
     trust_remote_code=True,    
 )
