@@ -17,8 +17,8 @@ else:
 
 print("Loading model...")
 # Load the tokenizer and model from the merged checkpoint
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct")
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct",
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B")
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B",
     # attn_implementation='flash_attention_2',
     torch_dtype=torch.bfloat16,
     # device map to mps of mac
