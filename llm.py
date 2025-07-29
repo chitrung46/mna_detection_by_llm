@@ -17,8 +17,8 @@ else:
 
 print("Loading model...")
 # Load the tokenizer and model from the merged checkpoint
-tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B-Chat")
-model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B-Chat",
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B")
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B",
     # attn_implementation='flash_attention_2',
     torch_dtype=torch.bfloat16,
     # device map to mps of mac
